@@ -84,5 +84,22 @@ namespace AlgorithmsCSharp
 
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string baseNumber = Interaction.InputBox("Enter the base number");
+            string expoNumber = Interaction.InputBox("Enther the exponential");
+            int baseInt;
+            int expoInt;
+
+            if(int.TryParse(baseNumber,out baseInt)&& int.TryParse(expoNumber,out expoInt))
+            {
+                listBox1.Items.Add(Class1.RecursionPower(baseInt, expoInt));
+            }
+
+
+
+
+        }
     }
 }

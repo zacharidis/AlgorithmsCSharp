@@ -40,6 +40,17 @@ namespace AlgorithmsCSharp
             return n%10 + SumOfDigits(n/10);
         }
 
+        public static BigInteger RecursionPower(int baseInt, int expInt)
+        {
+            if(expInt==0)
+            {
+                return 1; 
+            }
+
+            return baseInt * RecursionPower(baseInt, expInt-1);
+        }
+
+
 
     }
 }
