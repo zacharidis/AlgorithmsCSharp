@@ -42,6 +42,12 @@ namespace AlgorithmsCSharp
 
         public static BigInteger RecursionPower(int baseInt, int expInt)
         {
+
+            if(expInt <0 )
+            {
+                return -1; 
+            }
+
             if(expInt==0)
             {
                 return 1; 
