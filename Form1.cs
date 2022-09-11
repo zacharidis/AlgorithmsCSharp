@@ -69,5 +69,20 @@ namespace AlgorithmsCSharp
 
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string input = Interaction.InputBox("Enter a number ");
+            int intInput = 0;
+            if (input != null)
+            {
+                if (int.TryParse(input, out intInput))
+                {
+                    listBox1.Items.Add(Class1.SumOfDigits(intInput));
+
+                };
+
+            }
+        }
     }
 }
